@@ -2,6 +2,10 @@ def underline()
     puts "========="
 end
 
+def br()
+    puts ""
+end
+
 def letra_o(n)
     n.times do |i|
         if i % 5 == 4 || i % 5 == 0
@@ -86,20 +90,32 @@ if ARGV.empty?
 else
     puts "LETRA  O:"
     underline()
+    br()
     letra_o(n)
+    br()
     puts "LETRA  I:"
     underline()
+    br()
     letra_i(n)
+    br()
     puts "LETRA  Z:"
     underline()
+    br()
     letra_z(n)
+    br()
     puts "LETRA  X:"
     underline()
+    br()
     letra_x(n)
+    br()
     puts "NRO CERO:"
     underline()
+    br()
     numero_cero(n)
+    br()
     puts "NAVIDAD :"
     underline()
+    br()
     navidad(n)
+    br()
 end
